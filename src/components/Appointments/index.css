@@ -40,14 +40,14 @@ form {
   font-weight: 500;
 }
 input {
-  padding: .6rem 1.4rem;
+  padding: 0.6rem 1.4rem;
   font-weight: 400;
   font-size: 1.1rem;
   margin-bottom: 2rem;
   border: 1px solid #171f46;
   border-radius: 5px;
 }
-.title-input {
+.title-input ::placeholder {
   color: #b5b7c4;
 }
 .date-input {
@@ -89,6 +89,11 @@ hr {
   padding: 0.4rem 1.5rem;
   border-radius: 20px;
 }
+.active-fav {
+  background-color: #9897f0;
+  color: white;
+}
+
 .appointment-container {
   list-style: none;
   display: flex;
@@ -127,3 +132,8 @@ hr {
     gap: 1rem;
   }
 }
+
+button {
+  cursor: pointer;
+}
+
