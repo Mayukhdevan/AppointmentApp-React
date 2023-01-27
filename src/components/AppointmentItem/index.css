@@ -1,32 +1,27 @@
-.appointment-item{
+.appointment-item {
   border: 1px solid #b5b7c4;
   border-radius: 15px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.title-and-star-container{
+.title-and-star-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
 }
-.title{
+.title {
   font-size: 1.6rem;
   font-weight: 500;
   color: #171f46;
-
-
 }
-.star-btn{
+.star-btn {
   border: none;
   outline: none;
   background-color: transparent;
   cursor: pointer;
 }
-.star-img{
-
-}
-.appointment-date{
+.appointment-date {
   font-size: 1.2rem;
   color: #b5b7c4;
   font-weight: 500;
