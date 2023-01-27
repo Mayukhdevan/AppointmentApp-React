@@ -24,8 +24,8 @@ class Appointments extends Component {
           ...prevState.appointmentsList,
           {
             id: uuidv4(),
-            title: prevState.titleInput,
-            date: prevState.dateInput,
+            title: titleInput,
+            date: dateInput,
             isFavorite: false,
           },
         ],
@@ -66,6 +66,8 @@ class Appointments extends Component {
           toggleFav={this.toggleFav}
         />
       ))
+
+    const toggleFavBg = showFav ? 'active-fav' : ''
 
     return (
       <div className="bg-container">
@@ -112,7 +114,7 @@ class Appointments extends Component {
             <h1 className="main-heading2">Appointments</h1>
             <button
               type="button"
-              className="starred-btn"
+              className={`starred-btn ${toggleFavBg}`}
               onClick={this.filterFav}
             >
               Starred
