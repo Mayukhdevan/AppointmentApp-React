@@ -1,5 +1,5 @@
 ### Live link
-mdappointments.ccbp.tech
+https://mdappointments.ccbp.tech
 
 
 In this project, let's build an **Appointments App** by applying the concepts we have learned till now.
