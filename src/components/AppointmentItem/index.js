@@ -4,9 +4,9 @@ import {format} from 'date-fns'
 const AppointmentItem = props => {
   const {appointmentItem, toggleFav} = props
   const {title, date, isFavorite, id} = appointmentItem
-  const [year, month, day] = date.split('-').map(eachItem => parseInt(eachItem))
+//   const [year, month, day] = date.split('-').map(eachItem => parseInt(eachItem))
 
-  const formattedDate = format(new Date(year, month, day), 'dd MMMM yyyy, EEEE')
+  const formattedDate = format(new Date(date), 'dd MMMM yyyy, EEEE')
 
   const starUrl = isFavorite
     ? 'https://assets.ccbp.in/frontend/react-js/appointments-app/filled-star-img.png'
